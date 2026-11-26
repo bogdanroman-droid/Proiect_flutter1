@@ -1,5 +1,7 @@
 import 'package:material_ui/material_ui.dart';
 
+import 'screens/home_screen.dart';
+
 void main(){
   runApp(MySuperCounterApp());
 }
@@ -9,6 +11,10 @@ class MySuperCounterApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      home: HomeScreen(),
+    );
+
+
   }
 }
