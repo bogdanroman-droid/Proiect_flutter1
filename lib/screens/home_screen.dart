@@ -16,6 +16,12 @@ int _counter = 0;
     return Scaffold(
 
       body: Text('counter: $_counter'),
+      floatingActionButton: FloatingActionButton(onPressed: (){
+        setState(() {
+          _counter++;
+        });
+        
+      }),
     );
   }
 }
